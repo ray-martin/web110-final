@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Ray Martin 12/10/19 -->
+<html lang="en">
+    <head>
+        <title>Responsive Web Design With Media</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/styles.css" rel="stylesheet" media="screen"> <!-- separate folders -->
+        <link href="../styles/print.css" rel="stylesheet" media="print">
+        <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+        <style> /* Form Embedded Styling */
+                form {
+                    display: grid;
+                    grid-template-rows: auto;
+                    grid-template-columns: 5em .5fr;
+                    grid-gap: 1em;
+                    min-width: 10em;
+                }
+
+                label {
+                    grid-row: auto;
+                    grid-column: 1 / 2;
+                }
+
+                input[type="submit"] {
+                    grid-row: auto;
+                    grid-column: 2 / 3;
+                }
+
+                input[type="reset"] {
+                    grid-row: auto;
+                    grid-column: 2 / 3;
+                }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1>Responsive Web Design with Media</h1>
+        </header>
+        <nav>
+            <!-- Horizontal Nav (at the top and bottom of each page) should be coded as unordered lists. -->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Share What You Thought</h2>
+            <p>If you have comments or feedback that you would like to share, please complete this form.</p>
+            <div class="vidwrapper">
+                <div class="vidcontainer">
+                    <video src="../media/thanksforvisiting1080p.mp4" poster="../media/thanksforvisiting.jpg"
+                    autoplay loop controls></video> <!-- img used in poster of video -->
+                </div>
+            </div>
+        </main>
+        <section>
+           <h2>Feedback Form</h2>
+            <form action="mailto:rmarti98@stumail.jccc.edu" method="post"> <!-- Form -->
+                <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required="required">
+                <label for="email">Email: </label>
+                    <input type="text" name="email" id="email">
+                <label for="date">Date: </label>
+                    <input type="date" name="date" id="date"> 
+                <p>    
+                    <input type="checkbox" name="learned" id="learned" value="yes">
+                </p>
+                <p>Check if you learned something new</p>   
+                <p>Rating:</p>
+                <P>
+                    <select size="1" name="rating" id="rating">
+                        <option value="rating">What did you think of this project?</option>
+                        <option value="amazing">Amazing!</option>
+                        <option value="soso">It's ok.</option>
+                        <option value=notGood>It's not very good.</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="radio" name="writeBack" id="writeBack" value="yes">Yes<br>
+                    <input type="radio" name="writeBack" id="noWriteBack" value="no">No
+                </p>
+                <p>Want to be written back?</p>
+                <label for="comments">Comments: </label>
+                    <textarea name="comments" id="comments" rows="4" cols="20"></textarea>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+            </form>
+        </section>
+        <footer> <!--Includes Nav-->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+            <p>This is a <a href="http://students.jccc.edu/lisalfri/gradingrubric.html" target="_blank">JCCC Web 110 final project</a> 
+                hand coded with <i>love</i> by <a href="mailto:rmarti98@stumail.jccc.edu">Ray Martin</a></p>
+        </footer>
+    </div>
+    </body>
+</html>

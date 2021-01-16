@@ -1,0 +1,10 @@
+/* Ray Martin 12/11/19 */
+
+body { /* Inverting background and text for printing */
+    background: #fff;
+    color: #000;
+}
+
+nav, img, iframe, video, audio { /* Removing non-essential elements */
+    display: none;
+}

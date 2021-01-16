@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Ray Martin 12/10/19 -->
+<html lang="en">
+    <head>
+        <title>Responsive Web Design With Media</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/styles.css" rel="stylesheet" media="screen"> <!-- separate folders -->
+        <link href="../styles/print.css" rel="stylesheet" media="print">
+        <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1>Responsive Web Design with Media</h1>
+        </header>
+        <nav>
+            <!-- Horizontal Nav (at the top and bottom of each page) should be coded as unordered lists. -->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- must have at least 2 columns on all pages at large screen size -->
+                <h2>What Is Responsive Web Design?</h2>
+                <p>
+                   <b>Responsive web design</b> refers to progressively enhancing a web page for different viewing 
+                    contexts (including smartphones and tablets) through the use of coding techniques including 
+                    fluid layouts, flexible images, and media queries.<sup>1</sup> <!--p280 Basics of Web Design-->
+                    This is accomplished with the following techniques:
+                </p>
+                <ol class="noUnderline"> <!--ordered list of 5 or more items-->
+                    <li><a href="#flexibleMeasurements">Flexible Measurements</a></li>
+                    <li><a href="#flexibleImages">Flexible Images</a></li>
+                    <li><a href="#mediaQueries">Media Queries</a></li>
+                    <li><a href="#redesign">Redesign for Screen Sizes</a></li>
+                    <li><a href="#metaViewportTag">Use of Meta Viewport Tag</a></li>
+                </ol>
+                <h3 id="flexibleMeasurements">Flexible Measurements</h3>
+                <p>
+                    Web designers use measurements that adjust to the screen size available such as % for container 
+                    widths and ems for font sizes or padding rather than a fixed measurement such as a pixel (px). 
+                    An em is a relative unit of measurement based on the default font size of the web browser. 
+                    1em would be the same size as the default size. Decimals such as .5em can be used to declare 
+                    half the size of the default font.
+                </p>
+                <h3 id="flexibleImages">Flexible Images</h3>
+                <p>
+                    Images become flexible when their height and width attributes are removed so that they no longer 
+                    have fixed size constraints.  A max-width of 100% rule is added in CSS which allows the image 
+                    to flex as the page is scaled smaller.
+                </p>
+                <h3 id="mediaQueries">Media Queries</h3>
+                <p>
+                    Media queries set breakpoints for different screen sizes based on typical measurements such as a 
+                    full screen for monitors, tablet sizes and then mobile size screens. Typical widths used for those 
+                    breakpoints are at 64em for tablets and 37.5em for smartphones.
+                </p>
+                <h3 id="redesign">Redesign for Screen Sizes</h3> <!--Added this so I could have 5 items in my list-->
+                <p>
+                    Because the screen real-estate is so dramatically different, a benefit of using media queries is 
+                    the ability to move content and other elements around to optimize the user experience based on 
+                    what size viewport they are using. Full size screens tend to have content spread out more 
+                    horizontally where smaller devices such as smartphones tend to be narrow, so designers will 
+                    modify the scheme vertically.
+                </p>
+                <h3 id="metaViewportTag">Meta Viewport Tag</h3>
+                <p>
+                    The meta viewport tag &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+                    is placed in the Head section of an HTML file and tells the browser to scale the page to the size 
+                    of the viewport.  This ensures that no matter what size screen is being used, the page will look 
+                    as it was intended.
+                </p>
+            </main>
+            <section>
+                <h2>Common Media Types</h2>
+                <p>
+                    <b>Media</b> are the communication outlets or tools used to store and deliver information or data.
+                    <sup><a href="https://en.wikipedia.org/wiki/Media_(communication)" target="_blank">2</a></sup>  
+                    The World Wide Web itself is a medium used to share information where files written in 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">hypertext markup 
+                    language</a> (HTML) can be viewed with a software application called a web browser. In its most basic 
+                    form, a web page will contain text which may also include links to other web pages. Cascading style sheets 
+                    (CSS) and JavaScript are two other languages that, combined with HTML, make websites informative, 
+                    attractive, and interactive.</p>
+                <p>   
+                    In addition to basic text, there are many types of media incorporated into web sites in order to enhance 
+                    the user experience or communicate in a different way.  The most common of those we will discuss are:
+                </p>
+                <ul> <!-- unordered list of 5 or more items-->
+                    <li>Images</li>
+                    <li>Video</li>
+                    <li>Audio</li>
+                    <li>Portable Document Format (PDF)</li>
+                    <li>File Downloads</li>
+                </ul>
+                <h3>Flex and Respond</h3>
+                <p>Change the width of your browser to see this image <i>flex</i> and the page content <i>respond</i> fluidly!</p>
+                <p><img src="../media/sunset.jpg" alt="Oean Sunset"></p> <!-- img on each page -->
+            </section>
+        <footer> <!--Includes Nav-->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+            <p>This is a <a href="http://students.jccc.edu/lisalfri/gradingrubric.html" target="_blank">JCCC Web 110 final project</a> 
+                hand coded with <i>love</i> by <a href="mailto:rmarti98@stumail.jccc.edu">Ray Martin</a></p>
+        </footer>
+    </div>
+    </body>
+</html>

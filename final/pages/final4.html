@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Ray Martin 12/10/19 -->
+<html lang="en">
+    <head>
+        <title>Responsive Web Design With Media</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/styles.css" rel="stylesheet" media="screen"> <!-- separate folders -->
+        <link href="../styles/print.css" rel="stylesheet" media="print">
+        <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1>Responsive Web Design with Media</h1>
+        </header>
+        <nav>
+            <!-- Horizontal Nav (at the top and bottom of each page) should be coded as unordered lists. -->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2 id="myCredits">Credits</h2>
+            <ol>
+                <li>Basics of Web Design by Terry Felke-Morris, 5th edition, p.280</li>
+                <li><a href="https://en.wikipedia.org/wiki/Media_(communication)" target="_blank">
+                    Wikipedia: Media (Communication)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Developer Network on HTML<sup>3</sup></a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></li>
+                <li><a href="https://www.youtube.com/watch?v=DQYWWQmmTzI" target="_blank">YouTube: Lisa Friedrichsen 
+                    "Principles of Responsive Web Design"</a></li>
+                <li><a href="https://www.youtube.com/watch?v=StBj0vHMesk&t=1s" target="_blank">YouTube: Ralph Phillips 
+                    "Embed Responsive Videos with YouTube iframe and Video Tag</a></li>
+                <li><a href="http://catalog.jccc.edu/coursedescriptions/web/#WEB_110" target="_blank">Web 110 Catalog, jccc.edu</a></li>
+                <li>Sunset image on home page - Ray Martin 2018</li>
+                <li>JCCC Logo on a sign image - Ray Martin 2017</li>
+                <li>Windmill on JCCC Campus image - Ray Martin 2017</li>
+                <li>Leaf Walk Images - Ray Martin 2018</li>
+                <li>YouTube: "Hello World" - Ray Martin, Music- "Mr. Tea" by Rondo Brothers courtesy of YouTube Free Music Audio Library</li>
+                <li>Forgiveness Music Bed - Ray Martin 2019 commissioned for use in videos at <a href="https://www.forgivenessinstitutekc.com/" 
+                    target="_blank">forgivenessinstitutekc.com</a></li>
+                <li><a href="https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide/" target="_blank">
+                Facebook Information: statista</a></li>
+                <li><a href="https://www.youtube.com/about/press/" target="_blank">YouTube Information</a></li>
+                <li><a href="https://vimeo.com/about" target="_blank">Vimeo Information</a></li>
+                <li><a href="https://www.dailmotion.com/us/about" target="_blank">Dailymotion Information</a></li>
+                <li>Thanks For Visiting Video - Ray Martin 2019 (Stock Final Cut Pro Title Animation)</li>
+                <li><a href="https://en.wikipedia.org/wiki/PDF" target="_blank">Wikipedia: PDF</a></li>
+            </ol>
+            <p>
+                <img src="../media/final1.png" alt="Visual Studio Code Screenshot" title="Hand Coding in Visual Studio Code!"><!-- img on each page -->
+            </p>
+        </main>
+        <section>
+            <h2>Links</h2> <!-- Link Examples -->
+                <p>There are many different types of links used in this project to connect information.  Examples include:</p>
+            <h3>External Page</h3>
+                <p>
+                    When linking to a page that is not within this site, one references the exact URL in the a tag.<br>
+                    &lt;a href="http://www.jccc.edu/"&gt;JCCC&lt;/a&gt; 
+                    It's good practice to also include target="_blank" in order to open that link in a new window.<br>
+                    Ex: <a href="http://www.jccc.edu/" target="_blank">JCCC</a>
+                </p>
+            <h3>Internal Page</h3>
+                <p>
+                    To reference pages within the same folder of a website it is only necessary to include the name of the page.<br> 
+                    &lt;a href="final5.html"&gt;Contact&lt;/a&gt;<br>
+                    Ex: <a href="final5.html">Contact</a>
+                </p>
+            <h3>Within a page</h3>
+                <p>
+                    Some authors can be long winded! When content is going to scroll down several page lengths it can be helpful to 
+                    include links within the page. An example is on the home page of this project. This practice can also be helpful 
+                    for smartphone users because their screens are narrow and cause page content to be more vertical. One must name the 
+                    section with an id and simply reference that in the tag. &lt;a href="#withinAPage"&gt;Within a page&lt;/a&gt;<br>
+                    <a href="#myCredits">Credits</a>
+                </p>
+            <h3>Email</h3>
+                <p>
+                    An email link will open the devices default email program and initiate a new message to the address referenced.<br>
+                    &lt;a href="mailto:rmarti98@stumail.jccc.edu"&gt;Email Ray&lt;/a&gt;<br>
+                    Ex: <a href="mailto:rmarti98@stumail.jccc.edu">Email Ray</a>
+                </p>
+            <h3>File Download</h3>
+                <p>Sharing files that are not viewable in a web browser is a common way to pass along documents from one person to another. 
+                This is when a download link is used.  One references the link to the file itself to begin the download when clicked.<br>
+                &lt;a href="../media/helloworld.xls"&gt;Download&lt;/a&gt;<br>
+                Ex: <a href="../media/helloworld.xlsx">Download</a>
+                </p>
+        </section>
+        <footer> <!--Includes Nav-->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+            <p>This is a <a href="http://students.jccc.edu/lisalfri/gradingrubric.html" target="_blank">JCCC Web 110 final project</a> 
+                hand coded with <i>love</i> by <a href="mailto:rmarti98@stumail.jccc.edu">Ray Martin</a></p>
+        </footer>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Ray Martin 12/10/19 -->
+<html lang="en">
+    <head>
+        <title>Responsive Web Design With Media</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/styles.css" rel="stylesheet" media="screen"> <!-- separate folders -->
+        <link href="../styles/print.css" rel="stylesheet" media="print">
+        <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1>Responsive Web Design with Media</h1>
+        </header>
+        <nav>
+            <!-- Horizontal Nav (at the top and bottom of each page) coded as unordered lists. -->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+             <h2>Media Examples with Responsive Treatment</h2>
+             <p></p>
+             <h3>Images</h3>
+             <p>
+                 A common technique in Responsive Web Design is to make images flexible by setting a max-width 
+                 of 100%. The image will then shrink and grow up to the max restriction. 
+                 Images are often used for backgrounds of pages or containers where the text and other elements 
+                 float over the top of the background image. Another popular use for images is to display a gallery. 
+                 See the images below from the beautiful Kansas City fall 2018. With the help of a CSS 
+                 flexbox, the images fluidly change size and arrangement.
+             </p>
+             <h4>Flexbox Image Gallery - Leaf Walk 2018</h4>
+             <div id="leafwalk">
+                 <img src="../media/leafwalk/bordercollie.jpg" alt="Border Collie">
+                 <img src="../media/leafwalk/husky.jpg" alt="Husky">
+                 <img src="../media/leafwalk/leaves1.jpg" alt="Fall Leaves">
+                 <img src="../media/leafwalk/leaves2.jpg" alt="Fall Leaves">
+                 <img src="../media/leafwalk/leaves3.jpg" alt="Fall Leaves">
+                 <img src="../media/leafwalk/pine.jpg" alt="Pine Needles">
+                 <img src="../media/leafwalk/pinecone.jpg" alt="Pine cone">
+                 <img src="../media/leafwalk/sweetgum.jpg" alt="American Sweet Gum Fruit">
+                 <img src="../media/leafwalk/throughleaf.jpg" alt="Looking Through a Leaf">
+             </div>
+             <h3>Video</h3>
+             <p>
+                 Video has become a critical means for web builders to include in their design. 
+                 A local video can be embedded into a page using the HTML5 &lt;video&gt; tag. See an 
+                 example on the <a href="final5.html">credits page.</a> The challenge with directly 
+                 embedding a video hosted within a site is that file sizes, especially for high resolution video, can be very large 
+                 which is like kryptonite for the page load speed of a website. To counter that, it is 
+                 popular to use a video hosting service such as YouTube or Vimeo and embed the video into 
+                 the page.
+                </p>
+                 <p>
+                 YouTube has become one of the most watched platforms in the world and they offer 
+                 an attractive video player, but their embed codes include height and width attributes which 
+                 do not lend themselves to being very responsive. A way to counter that is to use CSS to create 
+                 a container where the video is displayed at 100% width and with a bottom padding of 56.25% 
+                 to maintain a 16:9 ratio.  The container is then wrapped in a second div which can be used to 
+                 size and arrange the video on the page. Credit to YouTuber, Ralph Phillips and his video
+                 <a href="https://www.youtube.com/watch?v=StBj0vHMesk&t=1s" target="_blank"> 
+                    "Embed Responsive Videos with YouTube iframe and Video Tag</a> which explains this well!
+             </p>
+             <div class="vidwrapper">
+                <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/idTaHnjPP1c" allow="accelerometer; 
+                        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+             </div>
+        </main>
+        <section>
+            <h2>Other Files</h2>
+            <h3>Audio</h3>
+            <p>
+                Audio can either be linked or embedded in an HTML5 element player which uses the &lt;audio&gt; tag. 
+                Browsers built-in audio players may vary or offer different controls.
+            </p> 
+            <p>   
+                <audio controls>
+                        <source src="../media/forgiveness-bed.mp3" type="audio/mpeg" title="Forgiveness Music Bed">
+                        <source src="../media/forgiveness-bed.ogg" type="audio/ogg" title="Forgiveness Music Bed">
+                    </audio>
+                </p>    
+                <p>
+                    <a href="../media/forgiveness-bed.mp3">Download the Track "Forgiveness Music Bed" by Ray Martin</a>
+                </p>
+            <h3>Portable Document Format (PDF)</h3>
+                <p>
+                    PDF files have a tremendous amount of benefit because they were developed by Adobe to be a standard document type 
+                    that can be displayed on a web browser or downloaded to a device independently from application software, hardware, 
+                    or operating system.<sup>19</sup> While they can be interactive allowing a user to enter data or add a signature, they are most 
+                    commonly used in web design as either a standard way to display a document that the user may want to print, or 
+                    as an easy way to share something created by an application that doesn't display on a web page such as a Word, Excel, 
+                    or PowerPoint presentation.<br>
+                    Ex: <a href="../media/helloworld.pdf" target="_blank">Open in a new browser window</a> using target="_blank"
+                </p>
+            <h3>File Downloads</h3>
+                <p>Web browsers have an amazing ability to read and display many types of files, but there still remain countless types 
+                    which they are unable to display.  Other times a software developer may want to allow a user to download their program 
+                    and install it in their computer. Another use for file downloading is to share a document that may be too large to 
+                    send via email. A link is used to initiate the download process of the file.<br>
+                &lt;a href="../media/helloworld.docx"&gt;Download&lt;/a&gt;<br>
+                Ex: <a href="../media/helloworld.docx">Download File</a>
+                </p>
+            <h2>Video Hosting Platforms Compared</h2> <!-- Data Table -->
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Users</th>
+                    <th>Watch Time</th>
+                    <th>Embed Option</th>
+                </tr>
+                <tr>
+                    <td>YouTube</td>
+                    <td>&gt;2 Billion</td>
+                    <td>1 Billion hours/day</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>2.45 Billion</td>
+                    <td>100 Million hours/day</td>
+                    <td>*Y/N</td>
+                </tr>
+                <tr>
+                    <td>Vimeo</td>
+                    <td>90 Million</td>
+                    <td>not published</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>Dailymotion</td>
+                    <td>300 Million</td>
+                    <td>3.5 Billion hours/month</td>
+                    <td>yes</td>
+                </tr>
+            </table> 
+            <p>*Facebook videos can only be embedded if their privacy is set to public.</p>   
+        </section>
+        <footer> <!--Includes Nav-->
+            <ul class="noBullet noUnderline">
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Examples</a></li>
+                <li><a href="final3.html">Web 110</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+            <p>This is a <a href="http://students.jccc.edu/lisalfri/gradingrubric.html" target="_blank">JCCC Web 110 final project</a> 
+                hand coded with <i>love</i> by <a href="mailto:rmarti98@stumail.jccc.edu">Ray Martin</a></p>
+        </footer>
+    </div>
+    </body>
+</html>
